@@ -1,0 +1,4 @@
+include CITATION.cff NOTICE.md
+include docs/tacl.a.774.pdf docs/implementation.md datasets/README.md
+recursive-include benchmarks *.py
+recursive-include tests *.py

@@ -1,0 +1,30 @@
+version: "1.0.0"
+date-released: "2026-10-07"
+cff-version: 1.2.0
+message: "If you use this software, please cite the TACL paper below."
+title: "SupraTok: Cross-Boundary Tokenization for Enhanced Language Model Performance"
+authors:
+  - family-names: "Tănase"
+    given-names: "Andrei-Valentin"
+    affiliation: "Faculty of Mathematics and Computer Science, Ovidius University of Constanta"
+  - family-names: "Pelican"
+    given-names: "Elena"
+    affiliation: "Faculty of Mathematics and Computer Science, Ovidius University of Constanta"
+license: MIT
+repository-code: "https://github.com/valentintanase/supratok"
+preferred-citation:
+  type: article
+  title: "SupraTok: Cross-Boundary Tokenization for Enhanced Language Model Performance"
+  authors:
+    - family-names: "Tănase"
+      given-names: "Andrei-Valentin"
+    - family-names: "Pelican"
+      given-names: "Elena"
+  journal: "Transactions of the Association for Computational Linguistics"
+  year: 2026
+  volume: 14
+  start: 1787
+  end: 1802
+  doi: "10.1162/tacl.a.774"
+  publisher:
+    name: "MIT Press"

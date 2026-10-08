@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supratok"
+version = "1.0.0"
+description = "SupraTok: cross-boundary tokenization for enhanced language model performance (TACL 2026)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [
+    { name = "Andrei-Valentin Tănase", email = "valentin.tanase@365.univ-ovidius.ro" },
+    { name = "Elena Pelican", email = "epelican@365.univ-ovidius.ro" },
+]
+keywords = ["tokenization", "bpe", "nlp", "language-models", "subword", "superword"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "tokenizers>=0.20",
+    "regex",
+    "numpy",
+]
+
+[project.optional-dependencies]
+sentencepiece = ["sentencepiece", "protobuf>=3.20"]
+dev = ["pytest>=7", "ruff", "sentencepiece", "protobuf>=3.20"]
+
+[project.urls]
+Paper = "https://doi.org/10.1162/tacl.a.774"
+Repository = "https://github.com/valentintanase/supratok"
+
+[tool.setuptools]
+packages = ["supratok"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

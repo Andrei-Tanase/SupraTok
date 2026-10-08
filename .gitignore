@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Test and lint caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Editors and local tool settings
+.vscode/
+.idea/
+.claude/
+*.swp
+*~
+
+# macOS and Windows
+.DS_Store
+._*
+Thumbs.db
+
+# Datasets are not redistributed
+datasets/**
+!datasets/README.md
+
+# Trained tokenizers
+tokenizer.json
+*.tokenizer.json
+*.model
